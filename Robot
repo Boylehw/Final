@@ -1,0 +1,65 @@
+
+
+import javax.swing.JOptionPane;
+
+
+public class Robot extends Biped{
+
+  private String Name;
+	private int Age; 
+	private int Weight; //lbs
+	private int Speed; //mph
+	private int Acceleration; //out of 5
+	private int RunDistance; //miles?
+	private String Talk;
+
+	
+
+
+	public String getName() {
+		Name  = "Bender";
+		return Name;
+	}
+
+	public String getTalk() {
+		Talk ="Beep";
+		return Talk;
+	}
+
+	public int getAge() {
+		Age  = 200;
+		return Age;
+	}
+
+	public int getWeight() {
+		Weight  = 1000;
+		return Weight;
+	}
+
+	public int getSpeed() {
+		Speed  = 60;
+		return Speed;
+	}
+
+	public int getAcceleration() {
+		Acceleration = 4;
+		return Acceleration;
+	}
+
+	public int getRunDistance() {
+		RunDistance  = 999;
+		return RunDistance;
+	}
+	
+
+	@Override
+	public String toString() {
+		return String.format(
+				"%s %s%s\n%s %s\n%s: %s\n%s: %s\n%s: %s\n%s: %s\n%s: %s",
+				"My name is", getName()," and I am a robot", "I can say", getTalk(), "My age is",
+				getAge(), "I weigh", getWeight(), "My speed is", getSpeed(),
+				"I can accelerate at a speed of", getAcceleration(),
+				"I can run", getRunDistance());
+	}
+
+}
