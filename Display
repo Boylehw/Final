@@ -1,0 +1,28 @@
+import javax.swing.JOptionPane;
+
+
+public class Biped {
+  
+	
+
+
+
+public static void main ( String[] args){
+	
+
+
+		Robot MyRobot = new Robot();
+		Human MyHuman = new Human();
+		Monkey MyMonkey = new Monkey();
+		
+
+		JOptionPane.showMessageDialog(null, MyHuman);
+		JOptionPane.showMessageDialog(null, MyRobot);
+		JOptionPane.showMessageDialog(null, MyMonkey);
+
+		
+
+	
+
+}
+}
