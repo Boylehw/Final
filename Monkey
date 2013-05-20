@@ -1,0 +1,60 @@
+
+public class Monkey extends Biped{
+
+  private  String Name;
+	private int Age; 
+	private int Weight; //lbs
+	private int Speed ; //mph
+	private int Acceleration; //out of 5
+	private int RunDistance; //miles?
+	private String Talk;
+		
+	
+	public String getName() {
+		Name   = "George";
+		return Name;
+	}
+
+	public String getTalk() {
+		Talk ="oooo";
+		return Talk;
+	}
+
+	public int getAge() {
+		Age   = 12;
+		return Age;
+	}
+
+	public int getWeight() {
+		Weight   = 55;
+		return Weight;
+	}
+
+	public int getSpeed() {
+		Speed  = 15;
+		return Speed;
+	}
+
+	public int getAcceleration() {
+		Acceleration = 2;
+		return Acceleration;
+	}
+
+	public int getRunDistance() {
+		RunDistance   = 3;
+		return RunDistance;
+	}
+
+	@Override
+	public String toString() {
+		return String.format(
+				"%s %s%s\n%s %s\n%s: %s\n%s: %s\n%s: %s\n%s: %s\n%s: %s",
+				"My name is", getName()," and I am a monkey", "I can say", getTalk(), "My age is",
+				getAge(), "I weigh", getWeight(), "My speed is", getSpeed(),
+				"I can accelerate at a speed of", getAcceleration(),
+				"I can run", getRunDistance());
+	}
+
+}  
+	 
+
